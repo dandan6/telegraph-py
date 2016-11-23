@@ -30,13 +30,14 @@ import requests
 import sys
 import random
 
+
 def random_uuid():
     b64 = list("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
     tmp = []
 
     for i in range(42):
         tmp.append(random.choice(b64))
-    
+
     tmp = ''.join(tmp)
 
     return "tph_uuid=" + tmp
@@ -62,14 +63,14 @@ if headers['Cookie'] == None:
 
         if not cookieval.startswith("tph_uuid"):
             cookieval = "tph_uuid" + cookieval
-        
+
         headers['Cookie'] = cookieval
     except IndexError:
         headers['Cookie'] = random_uuid()
-    
+
     print("tph_uuid (you might want to save this): %s" % headers['Cookie'])
 
-    
+
 data = """-----------------------------TelegraPhBoundary21
 Content-Disposition: form-data; name="Data";filename="content.html"
 Content-type: plain/text
@@ -122,7 +123,8 @@ Content-Disposition: form-data; name="page_id"
 0
 -----------------------------TelegraPhBoundary21--"""
 
-res = requests.post("https://edit.telegra.ph/save", headers=headers, data=data).json()
+res = requests.post("https://edit.telegra.ph/save",
+                    headers=headers, data=data).json()
 
 try:
     print("View your post at http://telegra.ph/{}".format(res['path']))
