@@ -66,7 +66,8 @@ if headers['Cookie'] == None:
         headers['Cookie'] = cookieval
     except IndexError:
         headers['Cookie'] = random_uuid()
-        print("I chose a random tph_uuid for you. Save it if you want to edit this post later.\n%s" % headers['Cookie'])
+    
+    print("tph_uuid (you might want to save this): %s" % headers['Cookie'])
 
     
 data = """-----------------------------TelegraPhBoundary21
@@ -121,4 +122,9 @@ Content-Disposition: form-data; name="page_id"
 0
 -----------------------------TelegraPhBoundary21--"""
 
-print(requests.post("https://edit.telegra.ph/save", headers=headers, data=data).text)
+res = requests.post("https://edit.telegra.ph/save", headers=headers, data=data).json()
+
+try:
+    print("View your post at http://telegra.ph/{}".format(res['path']))
+except KeyError:
+    print("Something went wrong...")
