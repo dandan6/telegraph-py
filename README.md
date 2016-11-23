@@ -11,3 +11,7 @@ Currently it outputs this when run:
     {"page_id":"18a54c6149f9ed68fde24","path":"Lets-make-a-post-11-23-10"}
 
 `telegraph-py` is a really new project and all help is appreciated.
+
+# Todo
+- user friendly command line interface
+- Python API
