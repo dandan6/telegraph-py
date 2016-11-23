@@ -10,6 +10,8 @@ Currently it outputs this when run:
     tph_uuid=ptQzBEEiLVczIK7WaoJSzqCH2Xm2CRNO78uOJifY8K
     {"page_id":"18a54c6149f9ed68fde24","path":"Lets-make-a-post-11-23-10"}
 
+and correctly publishes a post at [telegra.ph/Lets-make-a-post-11-23-10](http://telegra.ph/Lets-make-a-post-11-23-10)
+
 `telegraph-py` is a really new project and all help is appreciated.
 
 # Todo
