@@ -73,7 +73,40 @@ data = """-----------------------------TelegraPhBoundary21
 Content-Disposition: form-data; name="Data";filename="content.html"
 Content-type: plain/text
 
-[{"_":"p","c":[{"t":"Greetings,"}]},{"_":"p","c":[{"t":"Can we have a Telegraph API?"}]},{"_":"p","c":[{"t":"User "}]},{"_":"p","c":[{"_":"br"}]}]
+[
+  {
+    "_": "p",
+    "c": [
+      {
+        "t": "Greetings,"
+      }
+    ]
+  },
+  {
+    "_": "p",
+    "c": [
+      {
+        "t": "Can we have a Telegraph API?"
+      }
+    ]
+  },
+  {
+    "_": "p",
+    "c": [
+      {
+        "t": "User "
+      }
+    ]
+  },
+  {
+    "_": "p",
+    "c": [
+      {
+        "_": "br"
+      }
+    ]
+  }
+]
 -----------------------------TelegraPhBoundary21
 Content-Disposition: form-data; name="title"
 
