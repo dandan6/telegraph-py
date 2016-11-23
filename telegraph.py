@@ -49,7 +49,7 @@ headers = {
     'Accept-Encoding': 'gzip, deflate, br',
     'Content-Type': 'multipart/form-data; boundary=---------------------------TelegraPhBoundary21',
     'Referer': 'http://telegra.ph/',
-    'Content-Length': None,
+    'Content-Length': '687',
     'Origin': 'http://telegra.ph',
     'Cookie': None,
     'Connection': 'keep-alive'
