@@ -1,7 +1,7 @@
 # telegraph-py
 Use telegra.ph from Python
 
-This code is licensed under the MIT license, refer to [telegraph.py].
+This code is licensed under the MIT license, refer to [the telegraph.py file](telegraph.py).
 
 Currently it outputs this when run:
 
